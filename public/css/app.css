@@ -1,0 +1,1358 @@
+@charset "UTF-8";
+
+/* =================================================
+                        PC
+  ================================================ */
+html {
+    color: #474241;
+}
+
+/* ============== ヘッダー ============= */
+/* 
+** The Header Media Queries **
+** Tweak as per your needs **
+*/
+
+.header-height {
+    height: 50px;
+}
+
+.brand {
+    font-weight: bold;
+    font-size: 20px;
+    color: #474241;
+}
+
+.site-header {
+    position: relative;
+    /* background-color: ; */
+}
+
+.site-header__wrapper {
+    padding: 0 4% 0 5%;
+}
+
+@media screen and (min-width: 600px) {
+    .site-header__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-nav {
+        display: flex;
+    }
+}
+
+@media (min-width: 600px) {
+    .nav__wrapper {
+        display: flex;
+    }
+
+    .nav__wrapper a {
+        color: #474241;
+    }
+
+    /*　ハンバーガーメニューを消す */
+    .Menu-OpenBtn1 {
+        display: none;
+    }
+}
+
+.nav__item a {
+    display: block;
+    padding: 2.5rem 1rem;
+    color: #474241;
+}
+
+.logoutColor {
+    color: #474241;
+
+}
+
+.nav__toggle {
+    display: none;
+}
+
+@media screen and (max-width: 599px) {
+    .nav__toggle {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+}
+
+/* ============== フッター開始 ============= */
+/* PC */
+#footer02 {
+    margin-bottom: -70px;
+    background: #FFCC00;
+    color: #fff;
+}
+
+.ie #footer02 .logo img,
+#footer02 .logo {
+    display: inline-block;
+    width: 120px;
+}
+
+.logo a {
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+}
+
+#footer02 .nav li a {
+    padding: 15px;
+    color: #fff;
+}
+
+#footer02 .c-btn {
+    margin-left: 25px;
+}
+
+#footer02 .c-btn a {
+    color: #fff;
+}
+
+.copyright {
+    text-align: center;
+
+}
+
+
+@media screen and (min-width: 641px) {
+    #footer02 .logo {
+        padding: 10px 0;
+    }
+
+    #footer02 .wrap {
+        padding: 20px 5% 100px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .ie #footer02 .logo img,
+    #footer02 .logo a {
+        font-size: 20px;
+    }
+
+    #footer02 .cont {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    #footer02 .nav {
+        display: inline-block;
+    }
+
+    #footer02 .nav li {
+        display: inline-block;
+    }
+
+    #footer02 .nav li a:hover {
+        color: #ca353b;
+    }
+
+    .copyright {
+        padding-bottom: 10px;
+    }
+}
+
+
+/* ============== フッター終了 ============= */
+
+/* 左右５％のインナー */
+.inner_v {
+    padding: 0 5%;
+}
+
+/* ログイン画面 */
+body {
+    margin: 0 auto;
+}
+
+.card {
+    margin-top: 100px;
+    background: rgba(61, 49, 0, 0.05);
+    margin: 100px auto;
+    padding: 30px;
+    width: 300px;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.containerFlex {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+
+.navbar-brand {
+    text-decoration: none;
+    line-height: 60px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #474241;
+}
+
+.nav-item {
+    list-style: none;
+    padding-right: 10px;
+    padding: 2.5rem 1rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #474241;
+
+}
+
+.containerCenter {
+    width: 230px;
+    margin: 0 auto;
+    color: #474241;
+}
+
+.card-header {
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+
+.mb-3 {
+    padding-bottom: 5px;
+}
+
+/* ========= トップ画面 ======== */
+main {
+    position: relative;
+}
+
+#topFlex {
+    display: flex;
+    justify-content: space-between;
+    margin: 15vh 0;
+}
+
+.topImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.topImg {
+    width: 50%;
+    background: rgba(61, 49, 0, 0.05);
+    border-radius: 40px;
+}
+
+.catchCopy1 {
+    position: absolute;
+    background-color: #474241;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px;
+    top: 10px;
+    left: 25%;
+}
+
+.catchCopy2 {
+    position: absolute;
+    background-color: #474241;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px;
+    top: 40px;
+    left: 25%;
+}
+
+/*　ボタン開始 */
+.aFlex {
+    padding-top: 80px;
+    text-align: center;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+.btn_v1,
+a.btn_v1,
+button.btn_v1,
+.btn-color1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    height: 52px;
+    margin: 0 1%;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 50px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #474241;
+    border-radius: 0.5rem;
+}
+
+.btn_v,
+a.btn_v,
+button.btn_v,
+.btn-color {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    height: 52px;
+    margin: 0 1%;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 50px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #474241;
+    border-radius: 0.5rem;
+}
+
+a.btn-border_v span {
+    position: relative;
+
+    display: block;
+
+    padding: 1.25rem 3rem;
+
+    color: #474241;
+    border: 2px solid #FFCC00;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+
+a.btn-color span {
+    background: #FFCC00;
+}
+
+a.btn-border_v:before {
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 14px;
+    content: "";
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border: 2px solid #FFCC00;
+    border-top: 1px solid #FFCC00;
+    border-radius: 0 0 0.5rem 0.5rem;
+    background-image: -webkit-repeating-linear-gradient(135deg,
+            #FFCC00,
+            #FFCC00 1px,
+            transparent 2px,
+            transparent 5px);
+    background-image: repeating-linear-gradient(-45deg,
+            #FFCC00,
+            #FFCC00 1px,
+            transparent 2px,
+            transparent 5px);
+    background-size: 7px 7px;
+
+    -webkit-backface-visibility: hidden;
+
+    backface-visibility: hidden;
+}
+
+a.btn-border_v:hover {
+    -webkit-transform: translate(0, 3px);
+    transform: translate(0, 3px);
+}
+
+a.btn-border_v:hover:before {
+    bottom: -5px;
+}
+
+a.btn-border_v:active {
+    -webkit-transform: translate(0, 7px);
+    transform: translate(0, 7px);
+}
+
+a.btn-border_v:active:before {
+    bottom: -1px;
+}
+
+/* ボタン終了 */
+
+/* ============== 検索画面 ============= */
+#search form {
+    padding: 20px 0 40px;
+}
+
+#search h2 {
+    color: #fff;
+    background-color: #FFCC00;
+    width: 20%;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 40px auto 0;
+    line-height: 35px;
+    text-align: center;
+}
+
+#search .subtextSearch {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 12px;
+}
+
+#search section {
+    display: flex;
+    margin: 10px auto;
+    width: 55%;
+    background: rgba(61, 49, 0, 0.05);
+    padding: 15px 8% 15px 12%;
+    border-radius: 5px;
+}
+
+#search section h3 {
+    width: 45%;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* チェックボックスエリア */
+/* サイズ */
+#search .size {
+    width: 60%;
+}
+
+#search .size input {
+    width: 12%;
+    text-align: end;
+}
+
+/* 次へ進むボタン */
+form .formbottom {
+    text-align: center;
+    padding-top: 20px;
+}
+
+form .btns {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+    padding: 6px 25px;
+    color: #FFCC00;
+    font-weight: bold;
+    letter-spacing: 0.5pt;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 2px solid #FFCC00;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+}
+
+form .btns:hover {
+    color: #ffffff;
+    background-color: #FFCC00;
+}
+
+/* ============== 結果画面 ============= */
+.searchResult form {
+    padding: 50px 0 100px;
+}
+
+.searchResult h2 {
+    color: #fff;
+    background-color: #FFCC00;
+    width: 20%;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 auto;
+    line-height: 35px;
+}
+
+.searchResult h3 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.searchResult h4 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.contents a {
+    position: relative;
+    display: block;
+    border: 3px solid #474241;
+    width: 60%;
+    margin: 20px auto;
+    padding: 25px 5%;
+    color: #474241;
+}
+
+.backbutton {
+    margin-bottom: 80px;
+}
+
+.contents .log {
+    position: absolute;
+    width: 18%;
+    right: 10%;
+    top: 20px;
+}
+
+.contents .logJP {
+    width: 17%;
+}
+
+.contents h3 {
+    padding-top: 5px;
+}
+
+.contents p {
+    font-size: 10px;
+    padding-top: 20px;
+}
+
+.subcontents {
+    font-size: 11px;
+    padding-bottom: 5px;
+}
+
+.subcontents_font {
+    font-weight: 600;
+    color: rgba(71, 66, 65, 0.8);
+}
+
+.subcontents_color span {
+    background: #FFCC00;
+    color: #fff;
+    padding: 3px 4px;
+    border-radius: 10px;
+}
+
+.subcontents_detail {
+    color: rgba(71, 66, 65, 0.8);
+    width: 85%;
+}
+
+.isEmpty {
+    text-align: center;
+    padding: 20px 0 50px;
+}
+
+/* 梱包材エリア */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: rgba(61, 49, 0, 0.05);
+    padding: 30px 5%;
+}
+
+.products:after {
+    content: "";
+    width: 200px;
+    margin: 8px;
+}
+
+.product {
+    background: #fff;
+    width: 200px;
+    margin: 3% 2%;
+}
+
+.product h2 {
+    background: none;
+    color: #474241;
+    font-size: 10px;
+    width: 100%;
+}
+
+.product img {
+    padding: 7px;
+    height: 160px;
+    margin: 0 auto;
+}
+
+.product p {
+    padding: 7px;
+}
+
+/* ============== お問合せフォーム ============= */
+.contactMainStyle {
+    padding: 45px 0 50px;
+    background: rgba(61, 49, 0, 0.05);
+    margin: 50px 5%;
+}
+
+.contactMainStyle form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contactMainStyle h2 {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.contactMainStyle .contactSub {
+    padding-bottom: 20px;
+}
+
+.Asterisk {
+    color: #f00;
+}
+
+.contactMainStyle .contentsFlex {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-bottom: 8px;
+}
+
+.contentsBloc {
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+.contactMainStyle label {
+    display: flex;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.contactMainStyle button {
+    margin-left: 40%;
+    margin-top: 30px;
+}
+
+.contactMainStyle #message {
+    width: 100%;
+    height: 100px;
+}
+
+.confirmButtonFlex {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.confirmButtonFlex button {
+    margin: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+.confirmH2 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.confirmH3 {
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 100px;
+}
+
+.completeMainStyle {
+    padding-top: 158px;
+}
+
+.confirmInput {
+    padding-bottom: 20px;
+}
+
+.managementFlex2 {
+    display: flex;
+}
+
+.managementFlex2 label {
+    width: 20%;
+}
+
+/* ============== 管理者画面 ============= */
+.tab_container {
+    padding-bottom: 1em;
+    background-color: #fff;
+    border: 1px solid rgba(71, 66, 65, 0.8);
+    margin: 50px auto 100px;
+}
+
+.tab_item {
+    width: calc(100%/2);
+    /*100%/4を100%/2に変更*/
+    padding: 9px 0;
+    border-bottom: 3px solid rgba(71, 66, 65, 0.8);
+    background-color: rgba(61, 49, 0, 0.05);
+    text-align: center;
+    color: rgba(71, 66, 65, 0.8);
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.topContentsParent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -60px;
+    margin-bottom: 9px;
+}
+
+.tab_item:hover {
+    opacity: 0.75;
+}
+
+input[name="tab_item"] {
+    display: none;
+}
+
+.tab_content {
+    display: none;
+    padding: 1em 1em 0;
+    clear: both;
+    overflow: hidden;
+}
+
+#tab1:checked~#tab1_content,
+#tab2:checked~#tab2_content {
+    /*, #tab3:checked ~ #tab3_content , #tab4:checked ~ #tab4_contentを削除*/
+    display: block;
+}
+
+.tab_container input:checked+.tab_item {
+    background-color: rgba(71, 66, 65, 0.8);
+    color: #fff;
+}
+
+.managementFlex {
+    display: flex;
+}
+
+.managementFlex .wrap {
+    word-wrap: break-word;
+}
+
+.tab_content_description {
+    text-align: end;
+    margin-top: -50px;
+}
+
+.Endbutton a {
+    color: #474241;
+}
+
+.managementBackColor {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: rgba(61, 49, 0, 0.05);
+    padding: 40px 30%;
+}
+
+.managementBackColorUpdate h2 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.managementBackColor h2 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 60px auto 40px;
+}
+
+table {
+    border-collapse: collapse;
+    /*セル同士の間に隙間を空けない*/
+}
+
+th {
+    padding: 10px;
+    font-size: 13px;
+
+}
+
+td {
+    padding: 10px;
+    border-top: 1px solid #474241;
+    word-break: break-word;
+}
+
+/* ============== 配送方法管理画面 ============= */
+.tbl-r04 {
+    width: 100%;
+}
+
+
+.textWidth {
+    width: 46px;
+}
+
+.additionWidth {
+    width: 120px;
+}
+
+.detailWidth {
+    width: 46px;
+}
+
+.detailWidth a {
+    color: #474241;
+}
+
+.delivery-info .columnName {
+    display: none;
+}
+
+/* ============== 配送方法編集画面 ============= */
+.contentsBlocManege {
+    width: 100%;
+}
+
+.contentsFlex label,
+.contentsBlocManege label {
+    display: block;
+    float: left;
+    width: 69px;
+    text-align: end;
+    padding-right: 2%;
+    font-size: 12px;
+}
+
+.contentsBlocManege,
+.contentsFlex {
+    margin-bottom: 10px;
+}
+
+.contentsFlex input,
+.contentsBlocManege input {
+    padding: 3px 5%;
+}
+
+.manegeSibmitMargin {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 6px 25px;
+    color: #FFCC00;
+    font-weight: bold;
+    letter-spacing: 0.5pt;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 2px solid #FFCC00;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+}
+
+/* ============== 配送方法編集完了画面 ============= */
+.managementBackColorUpdate {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    background-color: rgba(61, 49, 0, 0.05);
+    padding: 0 5%;
+}
+
+.managementPadding {
+    margin: 50px 10% 100px;
+    text-align: center;
+}
+
+.managementPadding p {
+    padding-top: 67px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.managementBackColorButtom {
+    padding-bottom: 50px;
+}
+
+.manegeupdateSibmitMargin {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transform: translateX(-50%);
+    padding: 6px 25px;
+    color: #FFCC00;
+    font-weight: bold;
+    letter-spacing: 0.5pt;
+    text-decoration: none;
+    background-color: #ffffff;
+    border: 2px solid #FFCC00;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+}
+
+
+
+
+/* =================================================
+                        SP
+  ================================================ */
+
+@media screen and (max-width: 599px) {
+    html {
+        font-size: 15px;
+    }
+
+    /* ========== トップ画面 ========= */
+    #topFlex {
+        display: block;
+    }
+
+    .catchCopy1 {
+        top: -100px;
+        left: 5%;
+        font-size: 18px;
+    }
+
+    .catchCopy2 {
+        top: -55px;
+        font-size: 18px;
+        left: 5%;
+    }
+
+    .topImg {
+        width: 100%;
+    }
+
+    /* 
+    .btn_v1,
+    a.btn_v1,
+    button.btn_v1,
+    .btn-color1 {
+        position: absolute;
+        top: 327px;
+        left: 28%;
+    }
+
+    .btn_v,
+    a.btn_v,
+    button.btn_v,
+    .btn-color {
+        position: absolute;
+        left: 28%;
+        top: 417px;
+    } */
+
+    #topFlex {
+        margin: 22vh 0 10vh;
+    }
+
+    a.btn-border_v:before {
+        top: 73px;
+    }
+
+    .aFlex {
+        padding-top: 50px;
+    }
+
+
+    /* ヘッダー */
+    .nav__wrapper {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        z-index: -1;
+        background-color: #d9f0f7;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    }
+
+    .nav__wrapper.active {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .navbar-nav {
+        display: none;
+    }
+
+    /* ========== ハンバーガーメニュー ========= */
+    .Menu-OpenBtn {
+        position: absolute;
+        top: 20px;
+        right: 5%;
+        background: #474241;
+        color: #fff;
+        font-size: 14px;
+        border-radius: 2px;
+    }
+
+    .Menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 999;
+        transform: translateX(-100%);
+        transition: transform .3s ease-in-out;
+    }
+
+    .Menu-Open {
+        transform: translateX(0);
+    }
+
+    .Menu-Group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .Menu-Group-Item {
+        margin: 2rem 0;
+        text-align: center;
+    }
+
+    .Menu-Group-Item-Link {
+        font-size: 2rem;
+        color: #333;
+        text-decoration: none;
+    }
+
+    .Menu-CloseBtn {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .Menu-CloseBtn-Icon {
+        width: 2rem;
+        height: 2rem;
+        stroke: #333;
+    }
+
+    .nav__item a {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+
+    .nav-link {
+        text-decoration: none;
+        color: #474241;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .logoutColor {
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
+/* フッター */
+@media only screen and (max-width: 640px) {
+    #footer02 {
+        padding: 20px 0 0;
+    }
+
+    #footer02 .inner-block {
+        padding: 0;
+    }
+
+    .cont {
+        font-size: 14px;
+    }
+
+    .ie #footer02 .logo img,
+    #footer02 .logo {
+        display: block;
+        margin: 0 auto 20px;
+        text-align: center;
+    }
+
+    .ie #footer02 .logo img,
+    #footer02 .logo a {
+        font-size: 20px;
+    }
+
+    #footer02 .c-btn {
+        margin-bottom: 20px;
+        width: 30%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 12px;
+    }
+
+
+    #footer02 .nav li a {
+        padding: 12px 20px;
+        display: block;
+        background-size: 5px auto;
+        text-align: center;
+    }
+
+    .copyright {
+        font-size: 9px;
+        padding-bottom: 5px;
+        padding-top: 10px;
+    }
+
+    /* ========== 検索画面 ========= */
+    #search section {
+        display: block;
+        width: 100%;
+    }
+
+    #search .size {
+        width: 100%;
+    }
+
+    .selectAppStyle {
+        font-size: 15px;
+    }
+
+    #search h2 {
+        width: 40%;
+    }
+
+    #search section h3 {
+        padding-bottom: 5px;
+    }
+
+
+    /* ========== 検索結果画面 ========= */
+    .contents a {
+        width: 100%;
+    }
+
+    .searchResult h2 {
+        width: 40%;
+    }
+
+    .product {
+        width: 100%;
+    }
+
+    /* ========== 管理者画面 ========= */
+    @media screen and (max-width: 640px) {
+        .tbl-r04 {
+            width: 100%;
+        }
+
+        .tbl-r04 .thead {
+            display: none;
+        }
+
+        .tbl-r04 tr,
+        .tbl-r04 td {
+            display: block;
+            width: 100%;
+            position: relative;
+            word-break: break-word;
+        }
+
+        .tbl-r04 td:first-child:before {
+            content: "";
+            box-sizing: border-box;
+            font-weight: bold;
+            height: 40px;
+            padding: 10px;
+            position: absolute;
+            top: -41px;
+            left: -0.2%;
+            display: block;
+            width: 100.5%;
+        }
+
+        .tbl-r04 tr {
+            margin-bottom: 63px;
+        }
+
+        .tab_content_description {
+            margin-top: 0;
+        }
+
+        .managementText {
+            text-align: end;
+        }
+    }
+
+    /* ========== 管理者配送方法画面 ========= */
+    .textalineEnd {
+        text-align: end;
+    }
+
+    .topContentsParent {
+        margin-bottom: 60px;
+    }
+
+    .columnName {
+        width: 25%;
+    }
+
+    .columnFlex {
+        width: 60%;
+    }
+
+    .delivery-info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .delivery-info .columnName {
+        display: flex;
+    }
+    .fontBold_SP {
+        font-weight: bold;
+        width: 60%;
+    }
+
+    /* ========== 管理者配送方法編集画面 ========= */
+    .managementBackColor {
+        padding: 30px 9% 40px;
+        margin-bottom: 67px;
+    }
+
+    .contentsFlex label,
+    .contentsBlocManege label {
+        font-size: 13px;
+        padding-right: 10px;
+        text-align: start;
+    }
+
+    .contentsFlex input,
+    .contentsBlocManege input {
+        font-size: 15px;
+    }
+
+    .manegeSibmitMargin {
+        margin-top: 20px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .contentsBlocManege,
+    .contentsFlex {
+        word-break: break-word;
+    }
+
+    .contentsFlex div {
+        padding-left: 24%;
+    }
+
+    /* ==========お問い合わせ入力画面 ========= */
+    .contactMainStyle form {
+        width: 80%;
+    }
+
+    .contactMainStyle h2 {
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 50px;
+    }
+
+    .contentsBloc {
+        width: 100%;
+    }
+
+    .contentsBloc label {
+        font-size: 16px;
+        width: 200px;
+    }
+
+    .contentsBloc input {
+        width: 100%;
+        line-height: 2em;
+    }
+
+    .contentsFlex label,
+    .contentsBlocManege label {
+        padding-right: 0;
+        padding-bottom: 5px;
+    }
+
+    .confirmButtonFlex {
+        margin-top: 60px;
+    }
+
+    .confirmInput {
+        margin-bottom: 20px;
+    }
+
+    /* p {
+        text-align: start;
+         margin: 5px auto 20px;
+    } */
+}
