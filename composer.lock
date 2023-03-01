@@ -8091,7 +8091,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability_flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
 <!DOCTYPE html>
@@ -12,7 +12,7 @@
             <div class="inner_v">
                 <div class="tab_container">
                     <input id="tab1" type="radio" name="tab_item" checked>
-                    <label class="tab_item" for="tab1">全ユーザー管理</label>
+                    <label class="tab_item" for="tab1">管理情報</label>
                     <input id="tab2" type="radio" name="tab_item">
                     <label class="tab_item" for="tab2">配送方法管理</label>
                     <div class="tab_content" id="tab1_content">

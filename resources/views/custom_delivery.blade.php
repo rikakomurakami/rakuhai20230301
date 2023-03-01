@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
 <!DOCTYPE html>
@@ -8,50 +8,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>配送方法追加画面</title>
 </head>
 
 <body>
     <div id="wrapper">
         <div class="overlay-inner overlay-event"></div>
         <!-- メイン -->
-        <main class="contactMainStyle">
-            <form method="POST" action="{{ asset('custom_end') }}">
+        <main class="customMainStyle">
+            <form method="POST" action="{{ asset('custom_delivery_middle') }}" enctype=”multipart/form-data”>
                 @csrf
-                <h2>配送方法入力画面</h2>
-                <div class="contactSub">フォームにお問い合わせ内容と必要事項をご記入ください。<br>
-                    1週間以内に返信いたします。</div>
-                <div class="contentsBloc">
-                    <label for="name">配送名 <div class="Asterisk">*</div> </label>
-                    <input type="text" id="" name="name" value="" required>
-                </div>
-                <div class="contentsBloc">
-                    <label for="url">クリック先のURL <div class="Asterisk">*</div> </label>
-                    <input type="text" id="" name="url" value="" required>
-                </div>
-                <div class="contentsBloc">
-                    <label for="image">画像 <div class="Asterisk">*</div> </label>
-                    <input type="text" id="" name="image" value="" required>
-                </div>
-                <div class="contentsBloc">
-                    <label for="option">オプション <div class="Asterisk">*</div> </label>
-                    <input type="checkbox" name="track" value="track">追跡
-                    <input type="checkbox" name="anonymous" value="anonymous">匿名
-                    <input type="checkbox" name="safety" value="safety">補償
-                </div>
-                <div class="contentsBloc">
-                    <label for="box">梱包方法 <div class="Asterisk">*</div> </label>
-                    <div class="">
-                        <input type="checkbox" name="box" id="box" value="box">箱
+                <h2>配送方法の追加</h2>
+                <!-- <div class="contactSub">新規配送方法の情報を入力してください。</div> -->
+                <div class="contentsBloc_flex_Padding">
+                    @if(session('error'))
+                    <div class="alert alert-danger">
+                        {{ session('error') }}
                     </div>
+                    @endif
                 </div>
                 <div class="contentsBloc">
-                    <label for="detail">詳細 <div class="Asterisk">*</div> </label>
-                    <textarea id="message" name="detail" required style="resize: none;" required></textarea>
+                    <label for="app" class="customSubTitle">1, 連携しているアプリにチェックを入れて次に進んでください。(複数可)</label>
+                    @foreach($apps as $app)
+                    <div class="contentsBloc_flex contentsBloc_flex_Padding">
+                        <input type="checkbox" name="appArray[]" value="{{ $app->appls_name }}" id="app_{{ $app->id }}" class="app-checkbox">
+                        @if($app->appls_name == "利用していない")
+                        連携しなくても利用可能
+                        @else
+                        {{ $app->appls_name }}
+                        @endif
+                    </div>
+                    @endforeach
                 </div>
-                <div>
-                    <button type="submit" class="btns submit">戻る</button>
-                    <button type="submit" class="btns submit">入力内容を追加</button>
+                <div class="customYellowBtn">
+                    <input type="button" name="submit" class="btns submit" value="戻る" onclick="history.back();">
+                    <button type="submit" class="btns submit">次へ</button>
                 </div>
             </form>
         </main>

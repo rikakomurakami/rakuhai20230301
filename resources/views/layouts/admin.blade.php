@@ -58,7 +58,7 @@
     <div>
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm header-height">
             <div class="container containerFlex">
-                <a class="navbar-brand" href="{{ asset('index') }}">
+                <a class="navbar-brand" href="{{ asset('admin') }}">
                     {{ __('らくらく配達') }}
                 </a>
 
@@ -72,8 +72,36 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
-                        <li class="nav__item"><a href="{{ asset('index') }}">トップ</a></li>
-                        <li class="nav__item"><a href="{{ asset('search/searchTop') }}">検索</a></li>
+                        @guest
+                        @if (Route::has('login'))
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('管理者用ログイン') }}</a>
+                        </li>
+                        @endif
+
+                        @if (Route::has('register'))
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('register') }}">{{ __('登録') }}</a>
+                        </li>
+                        @endif
+                        @else
+                        <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="{{ asset('admin') }}">
+                                {{ __('管理者画面') }}
+                            </a>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                {{ __('ログアウト') }}
+                            </a>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
+                        </li>
+                        </li>
+                        @endguest
+                        <li class="nav__item"><a href="{{ asset('index_admin') }}">トップ</a></li>
+                        <li class="nav__item"><a href="{{ asset('search/searchTop_admin') }}">検索</a></li>
                         <li class="nav__item"><a href="https://rakuhai.myshopify.com/">オンラインストア</a></li>
                     </ul>
                 </div>
@@ -88,8 +116,36 @@
                         </button>
                         <!-- Authentication Links -->
                         <ul>
-                            <li class="nav__item Menu-Group-Item"><a href="{{ asset('index') }}">トップ</a></li>
-                            <li class="nav__item Menu-Group-Item"><a href="{{ asset('search/searchTop') }}">検索</a></li>
+                            @guest
+                            @if (Route::has('login'))
+                            <li class="nav-item Menu-Group-Item">
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('ログイン') }}</a>
+                            </li>
+                            @endif
+
+                            @if (Route::has('register'))
+                            <li class="nav-item Menu-Group-Item">
+                                <a class="nav-link" href="{{ route('register') }}">{{ __('登録') }}</a>
+                            </li>
+                            @endif
+                            @else
+                            <li class="nav-item dropdown Menu-Group-Item">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="{{ asset('admin') }}">
+                                    {{ __('管理者画面') }}
+                                </a>
+
+                            <li class="nav-item Menu-Group-Item">
+                                <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                    {{ __('ログアウト') }}
+                                </a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                            </li>
+                            </li>
+                            @endguest
+                            <li class="nav__item Menu-Group-Item"><a href="{{ asset('index_admin') }}">トップ</a></li>
+                            <li class="nav__item Menu-Group-Item"><a href="{{ asset('search/searchTop_admin') }}">検索</a></li>
                             <li class="nav__item Menu-Group-Item"><a href="https://rakuhai.myshopify.com/">オンラインストア</a></li>
                         </ul>
                     </nav>

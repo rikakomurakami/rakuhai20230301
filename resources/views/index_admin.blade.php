@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
 <!DOCTYPE html>
@@ -16,7 +16,7 @@
                     <img src="{{ asset('storage/top.svg') }}">
                 </div>
                 <div class="aFlex">
-                    <a href="{{ asset('search/searchTop') }}" class="btn_v1 btn-border_v btn-color1 btnTop">
+                    <a href="{{ asset('search/searchTop_admin') }}" class="btn_v1 btn-border_v btn-color1 btnTop">
                         <span>配送方法検索</span>
                     </a>
                     <a href="https://rakuhai.myshopify.com/" class="btn_v btn-border_v btn-color btnTop">

@@ -725,7 +725,7 @@ form .btns:hover {
     padding-bottom: 1em;
     background-color: #fff;
     border: 1px solid rgba(71, 66, 65, 0.8);
-    margin: 50px auto 100px;
+    margin: 50px auto 210px;
 }
 
 .tab_item {
@@ -822,18 +822,18 @@ p {
     margin: 60px auto 40px;
 }
 
-table {
+.tbl-r04 {
     border-collapse: collapse;
     /*セル同士の間に隙間を空けない*/
 }
 
-th {
+.tbl-r04 th {
     padding: 10px;
     font-size: 13px;
 
 }
 
-td {
+.tbl-r04 td {
     padding: 10px;
     border-top: 1px solid #474241;
     word-break: break-word;
@@ -951,9 +951,232 @@ td {
     transition-duration: 0.3s;
     -webkit-transition-duration: 0.3s;
 }
+.customFlex {
+    display: flex;
+    justify-content: space-between;
+}
 
+/* ============== カスタム画面 ============= */
+.customMainStyleTop {
+    padding: 50px;
+    margin: 50px 5%;
+    text-align: center;
+}
 
+.customMainStyle {
+    padding: 50px;
+    margin: 50px 5%;
+    text-align: center;
+    background: #eee;
+}
 
+.customMainStyleTop h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    background-color: #543618;
+    width: 30%;
+    border-radius: 20px;
+    font-size: 18px;
+    margin: 0 auto 20px;
+    line-height: 35px;
+}
+
+.customMainStyle h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    background-color: #543618;
+    width: 30%;
+    border-radius: 20px;
+    font-size: 18px;
+    margin: 0 auto 20px;
+    line-height: 35px;
+}
+
+.MaxWidth {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.button_solid017 a {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px auto 0;
+    max-width: 100%;
+    padding: 54px 25px;
+    color: #543618;
+    transition: 0.3s ease-in-out;
+    font-size: 15px;
+    font-weight: 600;
+    background: #eeee;
+    border-radius: 5px;
+    border: 0.2rem solid #543618;
+    box-shadow: 0.2rem 0.2rem 0px 0.1rem #cccccc;
+}
+.button_solid017 a:hover {
+  transform: translate3d(0.2rem, 0.2rem, 0);
+  box-shadow: none;
+  opacity: 1;
+  transition: all 0.2s;
+}
+.button_solid017 a:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #543618;
+    border-right: 3px solid #543618;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+.button_solid018  {
+    width: 30%;
+    max-width: 250px;
+    margin-top: 30px;
+}
+.button_solid018 a {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 26px 25px;
+    height: 170px;
+    color: #543618;
+    transition: 0.3s ease-in-out;
+    font-size: 15px;
+    font-weight: 600;
+    background: #eeee;
+    border-radius: 5px;
+    border: 0.2rem solid #543618;
+    box-shadow: 0.2rem 0.2rem 0px 0.1rem #cccccc;
+}
+.button_solid018 a:hover {
+  transform: translate3d(0.2rem, 0.2rem, 0);
+  box-shadow: none;
+  opacity: 1;
+  transition: all 0.2s;
+}
+.button_solid018 a:after {
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-top: 3px solid #543618;
+    border-right: 3px solid #543618;
+    transform: rotate(45deg) translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+
+/* ============== 配送方法新規追加画面 ============= */
+.alert-danger {
+    color: #f00;
+    font-size: 14px;
+}
+
+.contentsBloc_flex {
+    display: flex;
+}
+.contentsBloc_flex_Padding {
+    padding-left: 22%;
+}
+.customSubTitle {
+    display: block;
+    margin-left: 22%;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.customMainStyle .customYellowBtn {
+    margin: 50px auto 0;
+    text-align: center;
+}
+
+/* custom_delivery_middle */
+.customInputStyle {
+    margin: 0 5px 15px;
+}
+/* custom_delivery_bottom */
+.custom_delivery_bottom_margin {
+    width: 80%;
+    margin: 0 auto;
+}
+.customMainStyle_margin .customSubTitle {
+    margin-left: 0;
+}
+.custom_delivery_bottom_flex_sub {
+    display: flex;
+}
+
+.customMainStyle_margin th {
+    font-weight: bold;
+    width: 20%;
+    padding-bottom: 30px;
+}
+.customMainStyle_margin td {
+    width: 35%;
+    padding-bottom: 20px;
+}
+
+.custom_delivery_bottom_flex {
+    display: flex;
+}
+.custom_delivery_bottom_flex textarea {
+    width: 60%;
+    height: 100px;
+}
+.urlInput_width {
+    width: 80%;
+}
+.custom_delivery_bottom_sizeInput {
+    width: 4em;
+}
+.customMainStyle_margin textarea {
+    width: 100%;
+    height: 100px;
+}
+/* ============== アプリ規追加画面 ============= */
+.contactAppStyle form {
+    margin: 30px 0;
+    padding: 40px 15% 50px;
+}
+.text-align_start {
+    font-size: 14px;
+    font-weight: bold;
+    color: #474241;
+    padding: 30px 0 10px;
+}
+.app_sendspot_getspot_top {
+    background: rgba(61, 49, 0, 0.05);
+    margin-bottom: 20px;
+    padding: 10px 10% 40px;
+}
+.app_sendspot_getspot_bottom {
+    background: rgba(61, 49, 0, 0.05);
+    padding: 10px 10% 40px;
+}
+.appls_name_width {
+    width: 20%;
+}
+.contactAppStyleDeleteBtn {
+    font-size: 7px;
+}
+.btnsBack a {
+    background: #474241;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
 
 /* =================================================
                         SP
@@ -1274,6 +1497,7 @@ td {
     .delivery-info .columnName {
         display: flex;
     }
+
     .fontBold_SP {
         font-weight: bold;
         width: 60%;

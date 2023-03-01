@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.admin')
 
 @section('content')
 <!DOCTYPE html>
@@ -21,7 +21,7 @@
         <main class="inner_v">
             <h2>検索画面</h2>
             <div class="subtextSearch">商品の特徴を入力してください。</div>
-            <form action="{{ asset('search2') }}" method="post">
+            <form action="{{ asset('search2_admin') }}" method="post">
                 @csrf
                 <section>
                     <h3>利用しているアプリ</h3>

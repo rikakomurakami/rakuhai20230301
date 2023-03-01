@@ -14,6 +14,7 @@ class Appls extends Model
      */
     public function roles()
     {
+        // User::select('name','role')->where('id', 10)->get();
         return $this->belongsToMany(Delivery::class);
     }
 }

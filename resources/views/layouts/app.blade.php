@@ -72,34 +72,6 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
-                        @guest
-                        @if (Route::has('login'))
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('login') }}">{{ __('管理者用ログイン') }}</a>
-                        </li>
-                        @endif
-
-                        @if (Route::has('register'))
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                        </li>
-                        @endif
-                        @else
-                        <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                {{ Auth::user()->name }}
-                            </a>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                {{ __('Logout') }}
-                            </a>
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                @csrf
-                            </form>
-                        </li>
-                        </li>
-                        @endguest
                         <li class="nav__item"><a href="{{ asset('index') }}">トップ</a></li>
                         <li class="nav__item"><a href="{{ asset('search/searchTop') }}">検索</a></li>
                         <li class="nav__item"><a href="https://rakuhai.myshopify.com/">オンラインストア</a></li>
@@ -116,34 +88,6 @@
                         </button>
                         <!-- Authentication Links -->
                         <ul>
-                            @guest
-                            @if (Route::has('login'))
-                            <li class="nav-item Menu-Group-Item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                            @endif
-
-                            @if (Route::has('register'))
-                            <li class="nav-item Menu-Group-Item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                            </li>
-                            @endif
-                            @else
-                            <li class="nav-item dropdown Menu-Group-Item">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                    {{ __('Logout') }}
-                                </a>
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                    @csrf
-                                </form>
-                            </li>
-                            </li>
-                            @endguest
                             <li class="nav__item Menu-Group-Item"><a href="{{ asset('index') }}">トップ</a></li>
                             <li class="nav__item Menu-Group-Item"><a href="{{ asset('search/searchTop') }}">検索</a></li>
                             <li class="nav__item Menu-Group-Item"><a href="https://rakuhai.myshopify.com/">オンラインストア</a></li>
